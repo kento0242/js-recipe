@@ -1,0 +1,24 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JSSample</title>
+</head>
+<body>
+  <div id="display">ここに何かが表示される</div>
+  <button id="button">クリック！</button>
+
+  <script>
+    //ブラウザがHTMLを読み込んだ結果（document）からdiplayというIDのついた要素（elment）を取得（get）
+    const display = document.getElementById("display")
+    const button = document.getElementById("button")
+    button.onclick = function() {
+      display.textContent = "クリックされた！！"
+      const sayHelloTo = function(name) {
+        alert("Hello, " + name + "!")
+      }
+
+      sayHelloTo("guys")
+    }
+  </script>
+</body>
