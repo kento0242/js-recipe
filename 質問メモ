@@ -4,3 +4,10 @@
 ・liveserverとデフォルトブラウザで開くのどっちがいいのか
 　→LiveServerだと実行ファイルを保存した瞬間に反映される。なので楽ちん。
 ・キーの名前のやつ
+
+・button.onclick = function() {
+  // 10ms ごとに countUp を実行するように登録する
+  setInterval(countUp, 10)
+  button.textContent = "stop"
+}
+は押した時にしか読み込まれないのではないの？
